@@ -6,9 +6,12 @@ References:
 - https://morioh.com/p/0ba7be04416e
 - React Router:
 -- https://www.geeksforgeeks.org/how-to-create-a-multi-page-website-using-react-js/
+-Test API call:
+https://codepen.io/partum/pen/mdEQMaB?editors=1111
 ## Plan
 p1: title, intro, button
 p2: question, answer, submit, result
+
 
 # Scrimba - Quizzical
 

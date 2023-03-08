@@ -1,10 +1,11 @@
-import topImg from './assets/tp-r.gif';
+//import topImg from './assets/tp-r.gif';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route}
     from 'react-router-dom';
 
 import Quiz from './pages/quiz';
 import Start from './pages/start';
+
 
   
 function App() {
