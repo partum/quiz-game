@@ -1,0 +1,9 @@
+div.info{
+    display: flex;
+    flex-direction: row;
+    color: rgb(174, 122, 223);
+}
+.info p{
+    margin-bottom: 0;
+    font-size: 15px;
+}

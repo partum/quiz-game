@@ -1,0 +1,10 @@
+button.answers{
+    background-color: transparent;
+    font-size: 15px;
+    border-radius: 5px;
+    color: red;
+    padding: 10px 15px;
+}
+button:hover{
+    background-color: rgb(252, 252, 129);
+}

@@ -1,0 +1,7 @@
+.question{
+    margin-bottom: 20px;
+}
+.question__text{
+    font-weight: bold;
+    color: #626262;
+}
