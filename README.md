@@ -6,8 +6,12 @@ References:
 - https://morioh.com/p/0ba7be04416e
 - React Router:
 -- https://www.geeksforgeeks.org/how-to-create-a-multi-page-website-using-react-js/
+-Replace special characters with what they should be
+--https://stackoverflow.com/questions/9244824/how-to-remove-quot-from-my-json-in-javascript
 -Test API call:
 https://codepen.io/partum/pen/mdEQMaB?editors=1111
+-API Call with error stuff
+--https://linkpe.in/story/react-fetch-data
 ## Plan
 p1: title, intro, button
 p2: question, answer, submit, result

@@ -1,10 +1,13 @@
 button.answers{
     background-color: transparent;
     font-size: 15px;
-    border-radius: 5px;
-    color: red;
+    border-radius: 15px;
+    border: solid 2px rgb(174, 122, 223);
+    color: black;
     padding: 10px 15px;
+    margin-right: 10px;
+    margin-top: 16px;
 }
 button:hover{
-    background-color: rgb(252, 252, 129);
+    background-color: rgb(174, 122, 223);
 }
