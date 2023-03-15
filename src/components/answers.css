@@ -11,3 +11,6 @@ button.answers{
 button:hover{
     background-color: rgb(174, 122, 223);
 }
+button.choice{
+    background-color: rgb(174, 122, 223);
+}

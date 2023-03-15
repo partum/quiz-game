@@ -1,5 +1,5 @@
 import React from "react";
-import Question from "../components/question"
+import Question from "../components/quizPage"
 
 
 
