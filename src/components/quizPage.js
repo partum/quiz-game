@@ -47,10 +47,8 @@ export default function Question() {
                         return (
                             <div className="question">
                                 <Info category={q.category} difficulty={q.difficulty} />
-                                <Questions text={q.question}/>
-                                <span>
-                                    <Answers object={q}/>
-                                </span>
+                                <Questions text={q.question} />
+                                <Answers object={q} />
                             </div>
                         );
                     })
