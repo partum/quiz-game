@@ -3,8 +3,7 @@ import './answers.css'
 import {nanoid} from "nanoid"
 
 export default function Answers(props){
-	let [answers, setAnswers] = React.useState(["p"]);
-	let [foo, setFoo] = React.useState();
+	let [answers, setAnswers] = React.useState([]);
 
 	let temp = []
 	temp.push({
@@ -21,28 +20,16 @@ export default function Answers(props){
 			id: nanoid()
 		})
 	}
+
 	//not perfectly random, but it works for this project
 	temp = temp.sort((a, b) => 0.5 - Math.random());
 
-	//setAnswers("agga")
-	console.log("This is temp " + temp)
-	console.log("This is answers " + answers)
-
-	// return (answers.map(
-	// 	function (ans) {
-	// 		return (
-	// 			<Answers text={ans.value} clicked={ans.clicked} test={() => test(ans.clicked)}/>
-	// 		)
-	// 	}
-	// ))
-
-	function test(arg){
-		arg = !arg;
-		//console.log(arg)
-		setFoo("ham")
-	}
+	//setAnswers([1,2,3])
+	// function test(arg){
+	// 	console.log(arg)
+	// }
+	
 return (
-	// <button className={`answers ${props.clicked ? "choice" : ""}`} onClick={props.test}>{props.text}</button>
 	<span>
 		{temp.map(
 			function(ans){
@@ -51,9 +38,7 @@ return (
 				)
 			}
 		)}
-		
 	</span>
-	
 );
 };
 
