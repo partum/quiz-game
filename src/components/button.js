@@ -3,7 +3,11 @@ import './button.css'
 
 export default function Button(props){
 	return (
-		<a href={props.link}>{props.text}</a>
+		props.link?
+			<a href={props.link}>{props.text}</a>
+			: <button>{props.text}</button>
+		
+		
 	);
 };
 

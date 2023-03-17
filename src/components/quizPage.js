@@ -1,9 +1,11 @@
 import React from 'react';
 import './quizPage.css';
 import Info from './info';
+import Button from './button';
 //import Button from './button';
 import Answers from './answers';
 import Questions from './question'
+
 
 
 export default function Question() {
@@ -53,6 +55,7 @@ export default function Question() {
                         );
                     })
                 }
+                <Button text="submit"/>
             </div>
         );
     }

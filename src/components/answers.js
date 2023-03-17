@@ -26,12 +26,11 @@ export default function Answers(props){
 		return temp;
 	}
 
-	function test(arg){
-		arg?console.log("win"):console.log("lose");
-		console.log(arg.id)
-	}
-
 	function chooseAnswer(id) {
+		console.log(answers)
+		setAnswers(oldAnswers => oldAnswers.map(ans => {
+            return {...ans, clicked: false} 
+        }))
         setAnswers(oldAnswers => oldAnswers.map(ans => {
             return ans.id === id ? 
                 {...ans, clicked: !ans.clicked} :
