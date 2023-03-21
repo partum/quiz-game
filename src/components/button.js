@@ -1,13 +1,11 @@
 import React from 'react';
 import './button.css'
 
-export default function Button(props){
+export default function Button(props) {
 	return (
-		props.link?
+		props.link ?
 			<a href={props.link}>{props.text}</a>
-			: <button>{props.text}</button>
-		
-		
+			: <button onClick={() => props.grade()}>{props.text}</button>
 	);
 };
 

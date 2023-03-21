@@ -6,3 +6,10 @@
     color: #626262;
     margin-bottom: 0;
 }
+.quiz__button{
+display: flex;
+justify-content: center;
+}
+.quiz__button button{
+    margin-top: 25px;
+}

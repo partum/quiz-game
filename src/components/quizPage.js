@@ -12,7 +12,12 @@ export default function Question() {
     let [questions, setQuestions] = React.useState([]);
     let [isLoaded, setIsLoaded] = React.useState(false);
     let [err, setErr] = React.useState(null);
+    let [finish, setFinish] = React.useState(true);
 
+    //flips the finish variable when the user clicks submit
+    function grade() {
+        setFinish(prevFinish => !prevFinish)
+    }
 
     React.useEffect(function () {
         fetch("https://opentdb.com/api.php?amount=5")
@@ -43,6 +48,7 @@ export default function Question() {
         return <div> Loading... </div>
     } else {
         return (
+
             <div>
                 {questions.results.map(
                     function (q) {
@@ -50,12 +56,14 @@ export default function Question() {
                             <div className="question">
                                 <Info category={q.category} difficulty={q.difficulty} />
                                 <Questions text={q.question} />
-                                <Answers object={q} />
+                                <Answers object={q} func={grade} finish={finish} />
                             </div>
                         );
                     })
                 }
-                <Button text="submit"/>
+                <div className='quiz__button'>
+                    <Button text="submit" grade={grade} />
+                </div>
             </div>
         );
     }

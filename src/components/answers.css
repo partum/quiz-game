@@ -14,3 +14,9 @@ button:hover{
 button.choice{
     background-color: rgb(174, 122, 223);
 }
+button.wrong{
+    background-color: red;
+}
+button.right{
+    background-color: rgb(29, 216, 29);
+}
