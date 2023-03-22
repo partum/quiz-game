@@ -41,6 +41,9 @@ export default function Question() {
             );
     }, [])
 
+    function refreshPage() {
+        window.location.reload(false);
+      }
 
     if (err) {
         return <div> {err.message} </div>
@@ -62,7 +65,10 @@ export default function Question() {
                     })
                 }
                 <div className='quiz__button'>
-                    <Button text="submit" grade={grade} />
+                    {finish?
+                     <Button text="submit" grade={grade} />
+                     :  <Button text="reset" grade={refreshPage} /> //come up with a function that resets the game
+                }
                 </div>
             </div>
         );
