@@ -1,25 +1,6 @@
-# WIP!!
-## Notes
-API: https://opentdb.com/api_config.php
-References:
-- https://github.com/GastonPerez97/quizzical
-- https://morioh.com/p/0ba7be04416e
-- React Router:
--- https://www.geeksforgeeks.org/how-to-create-a-multi-page-website-using-react-js/
--Replace special characters with what they should be
---https://stackoverflow.com/questions/9244824/how-to-remove-quot-from-my-json-in-javascript
--Test API call:
-https://codepen.io/partum/pen/mdEQMaB?editors=1111
--API Call with error stuff
---https://linkpe.in/story/react-fetch-data
-## Plan
-p1: title, intro, button
-p2: question, answer, submit, result
-
-
 # Scrimba - Quizzical
 
-This is a solution to the [Bookmark landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the final lesson in [Scrimba's](https://scrimba.com) Learn React course. 
 
 ## Table of contents
 
@@ -40,52 +21,44 @@ This is a solution to the [Bookmark landing page challenge on Frontend Mentor](h
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Receive an error message when the newsletter form is submitted if:
-  - The input field is empty
-  - The email address is not formatted correctly
+- Land on a welcome screen
+- Move on to the quiz page
+- Choose answers for 5 random quiz questions
+- Have their answers graded when they click submit
+- Be able to restart the quiz when 
 
 ### Screenshot
 
-![](./images/screenshot-desktop.jpg)
+![](./src/assets/Screenshot.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/partum/bookmark-landing-page-master)
-- Live Site URL: [Add live site URL here](https://astonishing-horse-18e21d.netlify.app/)
+- Solution URL: [https://github.com/partum/quiz-game](https://github.com/partum/quiz-game)
+- Live Site URL: [https://quiz-game-tawny.vercel.app/start](https://quiz-game-tawny.vercel.app/start)
 
 ## My process
 
 ### Built with
 
-- CSS custom properties
-- SASS
-- Flexbox
-- CSS Grid
-- Bootstrap
+- CSS
+- React
 
 
 ### What I learned
 
-This is the first project I've done using Bootstrap. I learned that I don't like Bootstrap. 😅
-But seriously- I do understand the appeal of Bootstrap. All of the built in stuff can really save time. I just felt that in the time it took to look up classes in the docs,
-I could have just added all the styles from scratch.
-I really appreciated the tabbed section and the accordion section available in the docs. Although I do think I would have been able to make those from scratch, this time
-using the pre-written content saved me time.
+This is my most complex React project yet. This time I structured my files differently, and I think it made it a lot more manageable. I also learned a lot about when to put things in functions, when to pass info to components, and when to use hooks. Basic React stuff, I know, but it feels good to further solidify my knowledge.
 
 ### Continued development
 
-I could definitely put in more work to have the page match the original design. I decided not to because I felt that overriding all of Bootstrap's features/components would
-negate the purpose of this entire assignment (which is to learn Bootstrap.) 
-Also- I absolutely did not understand how to use breakpoints, so I just wrote my own. 😁
-I'm not sure if I want to continue learning Bootstrap in the future or pivot to Tailwind.
+This project has 2 pages, so I used React Router. I think in the future I want to learn how to work with Router better. Actually, this project was probably doable without Router.
+I used a lot of conditional rendering. I think for a project this small, it was ok, but I think some areas could have been better handled with a different approach.
 
 ### Useful resources
 
-- [Bootstrap documentation about breakpoints](https://getbootstrap.com/docs/4.1/layout/overview/#responsive-breakpoints) - This is for my future reference.
-- [Learn Bootstrap in Less Than 20 Minutes](https://www.youtube.com/watch?v=eow125xV5-c) - This is an inspiring video for anyone who wants to get started with Bootstrap. 
-
+- [Open Quiz DB API](https://opentdb.com/api_config.php) 
+- [React Router Tutorial](https://www.geeksforgeeks.org/how-to-create-a-multi-page-website-using-react-js/) 
+- [Find and replace characters in a string](https://stackoverflow.com/questions/9244824/how-to-remove-quot-from-my-json-in-javascript)
+- [Example AIP call with error handling](https://linkpe.in/story/react-fetch-data)
 
 
