@@ -14,6 +14,15 @@ This is a solution to the final lesson in [Scrimba's](https://scrimba.com) Learn
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 
+## 2026 Update
+I have realized that React has changed a lot and I have learned a lot, so I've decided to make some updates to this project.
+To Do:
+- [ ] remove router and make the quiz one page
+- [x] have the game start at base url and not url/start
+- [ ] update to vite instead of create react app (if possible)
+- [ ] create a custom component (for practice)
+- [ ] get everything up and working again
+- [ ] improve design
 
 ## Overview
 
@@ -60,5 +69,6 @@ I used a lot of conditional rendering. I think for a project this small, it was 
 - [React Router Tutorial](https://www.geeksforgeeks.org/how-to-create-a-multi-page-website-using-react-js/) 
 - [Find and replace characters in a string](https://stackoverflow.com/questions/9244824/how-to-remove-quot-from-my-json-in-javascript)
 - [Example AIP call with error handling](https://linkpe.in/story/react-fetch-data)
+
 
 
