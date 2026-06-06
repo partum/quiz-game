@@ -13,7 +13,7 @@ return (
     <Router>
     <Routes>   
       <Route path='/quiz' element={<Quiz/>} />
-      <Route path='/start' element={<Start/>} />
+      <Route path='/' element={<Start/>} />
     </Routes>
     </Router>
 );
