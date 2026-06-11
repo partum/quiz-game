@@ -56,20 +56,22 @@ export default function Answers(props) {
 				answers.map(
 					function (ans) {
 						return (
-							<button className={`answers ${ans.clicked ? "choice" : ""}`} onClick={() => chooseAnswer(ans.id)} id={ans.id}>{ans.value}</button>
+							<button key={ans.id} className={`answers ${ans.clicked ? "choice" : ""}`} 
+							onClick={() => chooseAnswer(ans.id)} id={ans.id}> {ans.value} </button>
 						)
 					}
 				)
 				: answers.map(
 					function (ans) {
 						return (
-							<button className={`answers ${grade(ans)}`} id={ans.id}>{ans.value}</button>
+							<button key={ans.id} className={`answers ${grade(ans)}`} 
+							id={ans.id}> {ans.value} </button>
 						)
 					}
 				)
 			}
 		</span>
 	);
-};
+}; 
 
 
