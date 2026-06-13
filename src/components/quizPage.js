@@ -2,7 +2,6 @@ import React from 'react';
 import './quizPage.css';
 import Info from './info';
 import Button from './button';
-//import Button from './button';
 import Answers from './answers';
 import Questions from './question'
 
@@ -13,6 +12,8 @@ export default function Question() {
     let [isLoaded, setIsLoaded] = React.useState(false);
     let [err, setErr] = React.useState(null);
     let [finish, setFinish] = React.useState(true);
+
+//console.log(questions)
 
     //flips the finish variable when the user clicks submit
     function grade() {
@@ -39,11 +40,15 @@ export default function Question() {
                     setIsLoaded(true)
                 }
             );
-    }, [])
+    }, []) //create a variable so this loads when the user clicks reset
 
     function refreshPage() {
         window.location.reload(false);
       }
+
+    function reset(){
+        setFinish(true)
+    }
 
     if (err) {
         return <div> {err.message} </div>
@@ -56,7 +61,7 @@ export default function Question() {
                 {questions.results.map(
                     function (q) {
                         return (
-                            <div className="question">
+                            <div className="question" key={q.correct_answer}> 
                                 <Info category={q.category} difficulty={q.difficulty} />
                                 <Questions text={q.question} />
                                 <Answers object={q} func={grade} finish={finish} />

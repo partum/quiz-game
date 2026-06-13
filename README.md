@@ -21,7 +21,8 @@ To Do:
 - [x] have the game start at base url and not url/start
 - [ ] update to vite instead of create react app (if possible)
 - [ ] create a custom component (for practice)
-- [ ] get everything up and working again
+- [x] get everything up and working again
+-- I only had to remove the StrictMode wrapper because this caused the API to be called twice which triggered a rate limit error
 - [ ] improve design
 
 ## Overview
