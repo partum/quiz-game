@@ -4,43 +4,18 @@ import Info from './info';
 import Button from './button';
 import Answers from './answers';
 import Questions from './question'
+import { useFetchQuestions } from '../hooks/useFetchQuestions';
 
 
 
 export default function Question() {
-    let [questions, setQuestions] = React.useState([]);
-    let [isLoaded, setIsLoaded] = React.useState(false);
-    let [err, setErr] = React.useState(null);
+    const { questions, isLoaded, err, refetch } = useFetchQuestions();
     let [finish, setFinish] = React.useState(true);
-
-//console.log(questions)
 
     //flips the finish variable when the user clicks submit
     function grade() {
         setFinish(prevFinish => !prevFinish)
     }
-
-    React.useEffect(function () {
-        fetch("https://opentdb.com/api.php?amount=5")
-            .then(res => {
-                // Unfortunately, fetch doesn't send (404 error)
-                // into the cache itself
-                // You have to send it, as I have done below
-                if (res.status >= 400) {
-                    throw new Error("Server responds with error!")
-                }
-                return res.json();
-            })
-            .then(data => {
-                setQuestions(data)
-                setIsLoaded(true)
-            },
-                err => {
-                    setErr(err)
-                    setIsLoaded(true)
-                }
-            );
-    }, []) //create a variable so this loads when the user clicks reset
 
     function refreshPage() {
         window.location.reload(false);
@@ -72,7 +47,7 @@ export default function Question() {
                 <div className='quiz__button'>
                     {finish?
                      <Button text="submit" grade={grade} />
-                     :  <Button text="reset" grade={refreshPage} /> //come up with a function that resets the game
+                     :  <Button text="reset" grade={refetch} /> 
                 }
                 </div>
             </div>
