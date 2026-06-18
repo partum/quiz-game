@@ -11,5 +11,5 @@ display: flex;
 justify-content: center;
 }
 .quiz__button button{
-    margin-top: 25px;
+    margin: 25px;
 }

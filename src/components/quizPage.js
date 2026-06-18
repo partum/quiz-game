@@ -17,14 +17,6 @@ export default function Question() {
         setFinish(prevFinish => !prevFinish)
     }
 
-    function refreshPage() {
-        window.location.reload(false);
-      }
-
-    function reset(){
-        setFinish(true)
-    }
-
     if (err) {
         return <div> {err.message} </div>
     } else if (!isLoaded) {
